@@ -1,13 +1,11 @@
 package com.secretweapon.gtdNote.Controllers;
 
-package org.launchcode.pao.Controllers;
-
 import com.secretweapon.gtdNote.Models.Data.GTDDao;
-import org.launchcode.pao.Controllers.UserController;
-import org.launchcode.pao.Models.Data.UserDao;
-import org.launchcode.pao.Models.Pao;
-import org.launchcode.pao.Models.Data.PaoDao;
-import org.launchcode.pao.Models.User;
+import com.secretweapon.gtdNote.Controllers.UserController;
+import com.secretweapon.gtdNote.Models.Data.UserDao;
+import com.secretweapon.gtdNote.Models.GTD;
+import com.secretweapon.gtdNote.Models.Data.GTDDao;
+import com.secretweapon.gtdNote.Models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +22,7 @@ import java.util.Optional;
 import java.util.Scanner;
 
 @Controller
-@RequestMapping("pao")
+@RequestMapping("gtd")
 
 public class GTDController {
     @OneToOne
